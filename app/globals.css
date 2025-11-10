@@ -1,0 +1,67 @@
+:root {
+  --bg: #0b0f17;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #7c3aed;
+  --accent-2: #22d3ee;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(124,58,237,0.12), transparent),
+              radial-gradient(1200px 600px at 90% 20%, rgba(34,211,238,0.12), transparent),
+              var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+               Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+.stack-xl > * + * { margin-top: 28px; }
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.lede {
+  font-size: 1.125rem;
+  color: var(--muted);
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.card h2 { margin-top: 0; }
+
+.card ul, .card ol { margin: 0; padding-left: 22px; }
+
+.faq details {
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.faq details + details { margin-top: 12px; }
+
+.faq summary { cursor: pointer; }
+
+.footer {
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
